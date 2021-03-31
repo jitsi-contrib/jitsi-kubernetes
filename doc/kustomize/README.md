@@ -9,7 +9,7 @@ To create a custom deployment based on kustomize, first create an overlay with y
 
 	namespace: jitsi
 	bases:
-	- https://github.com/rsoika/docker-jitsi-meet/examples/kubernetes/kustomize
+	- https://github.com/jitsi-contrib/kubernetes/doc/kustomize
 	
 	resources:
 	- 041-ingress.yaml
