@@ -5,7 +5,7 @@
 This repository provides tools and tutorials to run the [Jitsi Meet](https://jitsi.org/jitsi-meet/) stack in a [Kubernetes Cluster](https://kubernetes.io/). The stack is based on the official docker images provided by the [Docker Jitsi-meet project](https://github.com/jitsi/docker-jitsi-meet).
 
 
-<p align="center"><img src="./resources/jitsi-docker-kubernetes.png" /></p>
+<p align="center"><img src="./resources/jitsi-docker-kubernetes.png" style="width:400px;"/></p>
 
 
 There are quite a few different ways to deploy Jitsi with Kubernetes, not to mention different parameters as well depending on how you want it to scale. The following section provides examples, tutorials and general information how to run jitsi in a Kubernetes Cluster.  
