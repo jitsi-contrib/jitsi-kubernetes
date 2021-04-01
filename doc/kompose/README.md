@@ -1,4 +1,8 @@
-I was able to get a basic jitsi installation working behind an HA-proxy on a microk8s Kubernetes cluster using the [kompose](https://kompose.io/) tool on the docker-compose.yml file supplied here. I've outlined the basic steps below, but may have missed something. Also, I *did* in fact test with 3 participants, as with two it seems that the web service completely bypasses jvb which makes testing quite a hassle if you're trying to get up and running quickly.
+# Migration from Docker-Compose
+
+If you already have a docker-compose stack running jitsi, read how to migrate to Kubernetes.
+ 
+The following tutorial shows how to get a basic jitsi installation working behind an HA-proxy on a microk8s Kubernetes cluster using the [kompose](https://kompose.io/) tool on the docker-compose.yml file supplied here. I've outlined the basic steps below. Also, I *did* in fact test with 3 participants, as with two it seems that the web service completely bypasses jvb which makes testing quite a hassle if you're trying to get up and running quickly.
 
 Skip down to [here](#run-kompose-and-apply-the-result-to-kubernetes) if all you want to do is deploy to Kubernetes (may be broken in the future).
 
