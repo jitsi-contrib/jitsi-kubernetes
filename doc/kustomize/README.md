@@ -115,14 +115,14 @@ Next create a secret with your secret password (replace `my-password` with some 
 
 Now you can deploy your jitsi with:
 
-	$ kubectl apply -k  ./my-deployment
+	$ kubectl apply -k  ./my-jitsi
 	
 
 ## Undeploy
 
 To undeploy jitsi run
 
-	$ kubectl delete -k  ./my-deployment
+	$ kubectl delete -k  ./my-jitsi
 	$ kubectl delete namespace jitsi
 	
 
