@@ -27,7 +27,7 @@ spec:
       containers:
         - name: jicofo
           image: jitsi/jicofo:stable-5870
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           env:
             - name: XMPP_SERVER
               value: localhost
@@ -57,7 +57,7 @@ spec:
               value: jvbbrewery
         - name: prosody
           image: jitsi/prosody:stable-5870
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           env:
             - name: XMPP_DOMAIN
               value: meet.jitsi
@@ -92,7 +92,7 @@ spec:
               value: "true"
         - name: web
           image: jitsi/web:stable-5870
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           env:
             - name: XMPP_SERVER
               value: localhost
@@ -114,7 +114,7 @@ spec:
               value: "true"
         - name: jvb
           image: jitsi/jvb:stable-5870
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           env:
             - name: XMPP_SERVER
               value: localhost
