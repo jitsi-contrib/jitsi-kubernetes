@@ -42,6 +42,7 @@ The following example shows how to set the environment variable 'PUBLIC_URL' whi
 	  labels:
 	    k8s-app: jitsi
 	  name: jitsi
+	  namespace: jitsi	   
 	spec:
 	  template:
 	    metadata:
