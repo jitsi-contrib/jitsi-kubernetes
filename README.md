@@ -13,7 +13,7 @@ There are quite a few different ways to deploy Jitsi with Kubernetes, not to men
 
  - [Kubernetes Kustomize](doc/kustomize/README.md) - a simple deployment based on Kubernetes kustomize  allowing you to configure your jitsi setup in an easy and transparent way. 
  - [Migration from Docker-Compose](doc/kompose/README.md) - if you already have a docker-compose stack running jitsi this will help you to migrate to Kuberentes.
- - [Helm](#) - TBD
+ - [Helm](https://github.com/jitsi-contrib/jitsi-helm)
  - [Secure jitsi on Kubernetes](#) - TBD
 
 
