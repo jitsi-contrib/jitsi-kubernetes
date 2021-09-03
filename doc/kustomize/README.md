@@ -103,6 +103,29 @@ Replace 'jitsi.foo.com' with your Internet domain name:
 
 **Note:** This Ingress example assumes that you have already a running [Ingress Network](https://kubernetes.io/docs/concepts/services-networking/ingress/)  based on the [NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx) in combination with the ACME provider [Let's Encrypt](https://letsencrypt.org/).
 
+
+
+###  Linking the ingress.class "nginx" 
+
+Depending on your nginx setup it can be necessary that you explicitly need to add the *ingress.class* 'nginx'. In such a situation you may see a deployment backend event like this:
+
+	Default backend:  default-http-backend:80 (<error: endpoints "default-http-backend" not found>)
+
+To fix this, you should add an annotation with the *ingress.class* 'nginx' like in the following example:
+
+	kind: Ingress
+	apiVersion: networking.k8s.io/v1
+	metadata:
+	  name: jitsi
+	  namespace: jitsi
+	  annotations:
+	    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+	    # assign the ingress class
+	    kubernetes.io/ingress.class: "nginx"
+	.....
+	.........
+
+
 ## Deploy
 
 Before you deploy the first time, create a namespace to deploy jitsi to:
