@@ -15,7 +15,7 @@ To create a custom deployment based on kustomize, first create an overlay with y
 	- 041-ingress.yaml
 	
 	patchesStrategicMerge:
-	- 010-deployment.yaml
+	- 030-deployment.yaml
 
 
 
@@ -25,14 +25,14 @@ So your Kubernetes setup directory for jitsi should look like this:
 
 	.
 	├── my-jitsi
-	│   ├── 010-deployment.yaml
+	│   ├── 030-deployment.yaml
 	│   ├── 041-ingress.yaml
 	│   └── kustomization.yaml
 	
               
 ## Custom Configuration
 
-With the file *010-deployment.yaml* you can add additional environment variables to configure jitsi. 
+With the file *030-deployment.yaml* you can add additional environment variables to configure jitsi. 
 The following example shows how to set the environment variable 'PUBLIC_URL' which should point to your public Internet domain configured in your Ingress:
 
 
