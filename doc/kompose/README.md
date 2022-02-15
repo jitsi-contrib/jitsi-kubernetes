@@ -19,7 +19,7 @@ These steps are already done, and the results are in the current directory. Howe
 #### 0.b) docker-compose.yml updates
 Kompose chokes on a few things with the current docker-compose.yml that we don't really need.
 - Delete all references to volumes, networks, and depends_on.
-- Change all ports to have a single number form instead of Port:Port form (using the environment variables)
+- Change all ports to have a single number form instead of Port:Port form (using the environment variables, eg: `${JVB_PORT}:${JVB_PORT}/udp` -> `${JVB_PORT}/udp`)
 - Add an `expose: - '9090'` entry to the jvb service (this allows the internal websockets to work across multiple deployments)
 
 ## Run Kompose and apply the result to Kubernetes
